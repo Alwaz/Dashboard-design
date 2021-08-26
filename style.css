@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Defining all the colors */
+
+:root {
+  --sidebar-nav-color: #f2f3f7;
+  --white: #ffffff;
+  --logo: #de6837;
+  --right-bar: #f9fbfc;
+
+  /* Card colors */
+  --purple: #5943be;
+  --pink: #ffeee6;
+  --gray: #f6f4ff;
+
+  /* font colors */
+
+  --main-heading-color: #404057;
+  --sub-heading-color: #5a5b6f;
+  --text-color: #bfc2cc;
+
+  --gray-card-text-color: #bfc2cc;
+  --purple-card-text-color: ##c3bae4;
+}
