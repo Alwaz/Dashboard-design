@@ -10,6 +10,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+
 
     <!-- CSS file -->
     <link rel="stylesheet" href="./style.css">
@@ -19,41 +25,136 @@
 
 <body>
 
-    <!-- main container with items coloumns -->
+    <!-- main container with three columns -->
     <div class="main">
 
-        <div class="item navbar_left">
+        <div class="navbar">
 
-            <!-- logo -->
-            <div class="logo">
-                <div class="logo_text">P.</div>
+            <div class="navbar_logo">
+                <p>P.</p>
             </div>
 
-            <!-- navbar-items -->
-            <div class="nav_icons">
-                <ul>
-                    <li><i class="fas fa-chart-line"></i></li>
-                    <li class="active"><i class="fas fa-chart-line"></i></li>
-                    <li><i class="fas fa-chart-line"></i></li>
-                    <li><i class="fas fa-chart-line"></i></li>
-                </ul>
+            <div class="navbar_links">
 
+                <a href="#">
+                    <img class="btn" src="./images/filter.png" alt="Filter">
+                </a>
+                <a href="#">
+                    <img class="btn active" src="./images/dashboard.png" alt="Dashboard">
+                </a>
+                <a href="#">
+                    <img class="btn" src="./images/profile.png" alt="profile ">
+                </a>
+                <a href="#">
+                    <img class="btn" src="./images/stats.png" alt="Stats">
+                </a>
             </div>
+        </div>
+        <!-- nav bar ending here -->
+
+
+        <div class="main_section">
+
+            <h2>Progress Dasboard</h2>
+
+            <section class="top">
+                <div class="top_exam">
+                    <p> <span class="subTitle">DEADLINE</span>12:00</p>
+
+                    <p><span class="largeText">Exam-Unit 5</span></p>
+
+                    <p class="subTitle">Spanish for beginners</p>
+
+                    <div class="text">
+                        <img src="./images/profile-imgs.png" alt="profile images">
+                        <a href="#">Start testing</a>
+                    </div>
+
+
+                </div>
+
+                <div class="top_homework">
+
+                    <i class="far fa-check-circle"></i>
+                    <p class="todo_title">Homework</p>
+                    <p class="todo_subtilte">For today's <br> lesson</p>
+
+
+
+                </div>
+                <div class="top_reading">
+                    <i class="far fa-check-circle"></i>
+                    <p class="todo_title">Reading</p>
+                    <p class="todo_subtilte">25 words per <br>week</p>
+
+                </div>
+            </section>
+
+
+
+            <section class="middle">
+
+                <div class="group">
+
+                    <div class="group_Header">
+                        <p class="title">Group Info<br><span class="subTitle">13 students in the group</span></p>
+                        <i class="far fa-bell"></i>
+                    </div>
+
+                    <div class="group_Homework">
+                        <p class="title">Group Homework<br><span class="subTitle">5 students from your group online
+                                now</span></p>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="group_footer">
+                        <p class="title">Todays Lesson<br><span class="subTitle">Unit 6 Articles</span></p>
+                        <p>12:00</p>
+                    </div>
+
+                </div>
+
+                <div class="flagProgress">
+                    <div class="flagProgress_tiltle">
+                        <img src="./images/spain.png" alt="Spain">
+                        <p class="largeTile">Spanish for <br>beginners</p>
+                    </div>
+
+                    <div class="flagProgress_amount">
+                        <p>75%</p>
+                        <progress value="75" max="100"></progress>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="bottom">
+                <div class="bottom_grammer bot">
+                    <div>
+                        <i class="far fa-circle fas fa-pencil-alt"></i>
+                        <p class="title">Grammer <span class="subTitle">+30 grammer rules</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                <div class="bottom_dictionary bot">
+                    <div>
+                        <i class="fas fa-spell-check"></i>
+                        <p class="title">Dictionary <span class="subTitle">+10 new words</span></p>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </section>
 
         </div>
 
-
-        <div class="item middle">
-            <h1>Progress Dashboard</h1>
-
-            <div class="card_container">
-
-            </div>
-        </div>
-        <div class="item navbar_right"></div>
+        <!-- end of main section -->
+        <div class="profile"></div>
 
     </div>
-    <!-- end of main -->
+
+    <!-- main ending here -->
 
 </body>
 
