@@ -338,3 +338,109 @@ progress::-webkit-progress-bar {
   color: var(--red);
   margin-right: 5%;
 }
+
+/* Profile section styling */
+.profile {
+  display: grid;
+  grid-area: bottom;
+  padding: 0px 100px;
+  grid-template-rows: 3fr 15% 55%;
+  background: var(--right-bar);
+}
+
+.profile_pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_pic img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.profile_pic .largeTitle {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--main-heading-color);
+}
+
+.profile_pic .largeTitle,
+.profile_pic .subTitle {
+  margin: 5px 0px;
+}
+
+.box {
+  border: var(--border);
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+
+.box i {
+  border-radius: var(--border-radius);
+  padding: 12px 15px;
+  box-shadow: 1px 1px 2px lightgray;
+  color: var(--red);
+}
+
+.profile_progress .largeText {
+  color: var(--main-heading-color);
+  font-weight: 500;
+}
+
+.profile_progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grammer .percent {
+  color: var(--purple);
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.progressbox i {
+  color: #fff;
+  padding: 20px 18px;
+  border-radius: var(--border-radius);
+}
+
+.grammer i {
+  background-color: var(--purple);
+}
+
+.dictionary i {
+  background-color: var(--logo);
+}
+
+.reading i {
+  background-color: var(--red);
+}
+
+.dictionary .percent {
+  color: var(--logo);
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.reading .percent {
+  color: var(--red);
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+.progressbox {
+  height: 100px;
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
