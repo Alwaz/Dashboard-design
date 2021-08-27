@@ -30,7 +30,7 @@
 
   /* border styles*/
   --border: 0.5px solid lightgrey;
-  --border: 10px;
+  --border-radius: 10px;
 }
 
 body,
@@ -98,4 +98,243 @@ html {
 
 .stats {
   grid-row: 6/7;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  column-gap: 10px;
+  border-radius: var(--border-radius);
+}
+
+.main_section {
+  display: grid;
+  padding: 0px 70px;
+  grid-area: main;
+  grid-template-rows: 1fr 1fr auto 1fr;
+}
+
+.main_section h2 {
+  color: var(--main-heading-color);
+  font-size: 3.4em;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  place-self: end start;
+  margin-bottom: 20px;
+}
+
+.top_exam {
+  background: var(--purple);
+  display: flex;
+  color: var(--purple-card-text-color);
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.top_exam p {
+  font-weight: bold;
+}
+
+.top_homework {
+  background: var(--pink);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  color: var(--red);
+  padding: 20px;
+}
+
+.top_reading {
+  color: var(--gray-card-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  background: var(--gray);
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text > a {
+  color: #ffffff;
+}
+
+[class^="top_"] {
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+}
+
+.title {
+  font-weight: 500;
+  color: var(--main-heading-color);
+}
+
+.subTitle {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: var(--purple-card-text-color);
+}
+
+.largeText {
+  font-weight: 400;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+[class^="top_"] i {
+  font-size: 1.5em;
+}
+
+.todo_title {
+  font-weight: 700;
+}
+
+.todo_subtilte {
+  font-weight: 400;
+}
+
+/* top section styling complete */
+
+.middle {
+  display: grid;
+  column-gap: 25px;
+  margin-top: 5%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 4px 5px 20px lightgray;
+  border-radius: 10px;
+  padding: 26px;
+  height: 275px;
+}
+
+.group_Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group_Homework {
+  display: flex;
+  align-items: center;
+  background: var(--red);
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: var(--border);
+  justify-content: space-between;
+}
+
+.group_Homework .title {
+  color: #ffffff;
+}
+
+.group_Homework .subTitle {
+  color: var(--pink);
+}
+
+.group_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flagProgress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flagProgress_tiltle .largeTitle {
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--main-heading-color);
+}
+
+.flagProgress_tiltle > div {
+  width: 40px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius);
+  box-shadow: 4px 5px 20px lightgray;
+}
+
+.flagProgress_tiltle img {
+  border-radius: var(--border);
+  width: 30px;
+}
+
+progress {
+  border: none;
+  height: 8px;
+}
+
+progress::-webkit-progress-value {
+  background: var(--red);
+  border-radius: 8px;
+}
+
+progress::-webkit-progress-bar {
+  background: whitesmoke;
+  border-radius: 8px;
+}
+
+.flagProgress_amount p {
+  color: var(--main-heading-color);
+  font-weight: 700;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 75px;
+}
+
+[class^="bottom_"] {
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.bot {
+  height: 100px;
+  width: 100%;
+  border: var(--border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bot > div {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bot .icon-circle {
+  box-shadow: 4px 6px 20px lightgrey;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.1em;
+}
+
+.bot .fa-pencil-alt {
+  color: var(--purple);
+  margin-right: 5%;
+}
+
+.bot .fa-spell-check {
+  color: var(--red);
+  margin-right: 5%;
 }
