@@ -1,4 +1,4 @@
 # Dashboard Design Challange-Dribble
 
 
-![Stats](images\DashboardDesign.png)
+![Screen Shot](https://github.com/Alwaz/Dashboard-design/blob/master/images/DashboardDesign.png)
