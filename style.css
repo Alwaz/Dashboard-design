@@ -228,7 +228,7 @@ html {
   background: var(--red);
   padding: 10px 20px;
   color: #ffffff;
-  border-radius: var(--border);
+  border-radius: var(--border-radius);
   justify-content: space-between;
 }
 
@@ -344,7 +344,7 @@ progress::-webkit-progress-bar {
   display: grid;
   grid-area: bottom;
   padding: 0px 100px;
-  grid-template-rows: 3fr 15% 55%;
+  grid-template-rows: 30% 15% 55%;
   background: var(--right-bar);
 }
 
